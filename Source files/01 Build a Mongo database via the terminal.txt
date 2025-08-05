@@ -1,0 +1,19 @@
+> db
+test
+> use courses
+switched to db courses
+> db
+codb.webDevCourses.insertOne({ name: 'Hello HTML'  })
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6127fcb85c4c9f6c07fbe68e")
+}
+> db.webDevCourses.insertOne({ name: 'Hello CSS'  })
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6127fce65c4c9f6c07fbe68f")
+}
+> db.webDevCourses.find()
+{ "_id" : ObjectId("6127fcb85c4c9f6c07fbe68e"), "name" : "Hello HTML" }
+{ "_id" : ObjectId("6127fce65c4c9f6c07fbe68f"), "name" : "Hello CSS" }
+> ^C

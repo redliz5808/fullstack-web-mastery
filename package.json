@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-web-mastery",
+  "version": "1.0.0",
+  "description": "Fullstack Web Mastery Build Apps with MongoDB course walkthrough",
+  "homepage": "https://github.com/redliz5808/fullstack-web-mastery#readme",
+  "bugs": {
+    "url": "https://github.com/redliz5808/fullstack-web-mastery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redliz5808/fullstack-web-mastery.git"
+  },
+  "license": "ISC",
+  "author": "Elizabeth W. Franklin",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "source .env; node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "mongodb": "^6.18.0"
+  }
+}
