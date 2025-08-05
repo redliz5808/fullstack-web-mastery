@@ -1,0 +1,39 @@
+body {
+    background-color:lightgray;
+}
+
+#petInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.input-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.input-container label {
+    margin-right: 0.5rem;
+}
+
+.input-container input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding: 0.5rem;
+    color: #FFF;
+}
+
+.input-container input::placeholder {
+    color: #CCC;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

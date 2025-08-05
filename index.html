@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Web Mastery (Deviated)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fullstack Web Mastery (Deviated)</h1>
+    <div class="current-data">
+        <h2>Current Data</h2>
+        <div id="currentDataTable"></div>
+    </div>
+    <div class="new-data">
+        <h2>New Data</h2>
+        <form id="petInfo">
+            <div class="input-container">
+                <label for="petName">Pet Name</label>
+                <input type="text" name="petName" id="petName" placeholder="Max">
+            </div>
+            <div class="input-container">
+                <label for="petAge">Pet Age</label>
+                <input type="number" name="petAge" id="petAge" min="1" max="99" placeholder="5">
+            </div>
+        </form>
+    </div>
+
+    <script src="server.js"></script>
+</body>
+</html>

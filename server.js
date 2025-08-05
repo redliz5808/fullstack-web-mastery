@@ -54,9 +54,9 @@ let MyApp = async () => {
         console.log(updatedData);
     } catch (error) {
         console.log({ error });
-    } finally {
-        client.close();
-    }
+    } // finally {
+    //     client.close();
+    // }
 };
 
 MyApp();
